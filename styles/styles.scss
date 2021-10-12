@@ -12,9 +12,10 @@ body {
   background: linear-gradient($violet, $blue) no-repeat;
   height: 100vh;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  position: relative;
 }
 
 h1 {
@@ -25,19 +26,24 @@ h1 {
 .outer-container {
   padding: 2rem;
   border-radius: 2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  right: 2rem;
+
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
   background-color: #fff;
-  justify-content: center;
+  // justify-content: center;
   box-shadow: 0 20px 80px rgba($dark-blue, 0.5);
 
   .img {
     position: relative;
     transform: translateY(-130px);
-    height: 120px;
-    display: flex;
-    flex-direction: column;
+    height: 150px;
+    // display: flex;
+    // flex-direction: column;
 
     &__top {
       // position: absolute;
@@ -48,7 +54,6 @@ h1 {
     &__bottom {
       // position: absolute;
       // top: 8rem;
-      width: 100%;
       transform: translateY(-75%);
       padding: 1.5rem;
       z-index: 9;
@@ -71,6 +76,13 @@ h1 {
   border-bottom: 1px solid $light-gray;
   padding: 1rem 0;
   line-height: 1.4;
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+    .faq__question {
+      font-weight: 900;
+    }
+  }
 
   &__question {
     display: flex;
@@ -94,7 +106,19 @@ h1 {
   }
   .arrow {
     transform: rotate(180deg);
+    transition: 0.2s ease;
   }
+}
+
+.attribution {
+  color: $dark-blue;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
 }
 
 .attribution,
