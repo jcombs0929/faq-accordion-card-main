@@ -24,24 +24,46 @@
   </head>
 
   <body>
-    <section class="outer-container">
-      <div class="img">
-        <img
-          src="./images/illustration-woman-online-mobile.svg"
-          alt="Header Image Top"
-          class="img__top"
-        />
-        <img
-          src="./images/bg-pattern-mobile.svg"
-          alt="Header Image Bottom"
-          class="img__bottom"
-        />
-      </div>
+    <main class="container">
+      <section class="img__container">
+        <div class="img__mobile">
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="Header Image Top"
+            class="img__mobile--top"
+          />
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            alt="Header Image Bottom"
+            class="img__mobile--bottom"
+          />
+        </div>
 
-      <div class="inner-container">
+        <div class="img__desktop">
+          <img
+            src="./images/illustration-box-desktop.svg"
+            alt="Box"
+            class="img__desktop--box"
+          />
+          <div class="img__desktop--inner">
+            <img
+              src="./images/illustration-woman-online-desktop.svg"
+              alt="Header Image"
+              class="img__desktop--inner-top"
+            />
+            <img
+              src="./images/bg-pattern-desktop.svg"
+              alt="Background Pattern"
+              class="img__desktop--inner-bottom"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="faq__container">
         <h1>FAQ</h1>
 
-        <div class="faq-container">
+        <div class="faq-inner-container">
           <div class="faq" onclick="toggleFAQ(0)">
             <div class="faq__question">
               <p>How many team members can I invite?</p>
@@ -123,8 +145,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <div class="attribution">
       Challenge by
