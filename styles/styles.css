@@ -121,16 +121,24 @@ h1 {
 
 .container .img__container .img__desktop--box {
   position: absolute;
-  top: 14vmax;
+  top: 40%;
   left: -93px;
   z-index: 999;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   .container .img__container .img__desktop--box {
     width: 160px;
-    top: 14.5vmax;
+    top: 13vmax;
     left: -78px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container .img__container .img__desktop--box {
+    width: 140px;
+    top: 11vmax;
+    left: -69px;
   }
 }
 
@@ -153,6 +161,13 @@ h1 {
   width: 170%;
   top: -200px;
   left: -87%;
+}
+
+@media (max-width: 1000px) {
+  .container .img__container .img__desktop--inner-bottom {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
 }
 
 .container .img__container .img__desktop--pattern {
